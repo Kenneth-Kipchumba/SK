@@ -11281,3 +11281,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bg-img {
+  background-image: url(/images/logo.jpg?e08134a557ab4b62268b727abb95e5dc);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
