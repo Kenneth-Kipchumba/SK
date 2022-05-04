@@ -35,7 +35,7 @@
                         <div class="text-center">
                             <!-- Page heading-->
                             <h1 class="text-white">Secular Kenya!</h1>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                            <p class="lead mb-0">SECULAR KENYA (SK) is a non-profit society whose main objective is to advocate for separation of Church and State in Kenya. SK will also promote secularism and critical thinking in Kenya and stand for human rights and social justice, affirming the dignity of all humans. Further, SK will also promote the fullest use of science for human welfare and environmental sustainability and defend freedom of expression in general.</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="{{ asset('logo.jpg') }}" alt="..." height="70px" width="70px"/>
-                            <h5>Free Bala</h5>
+                            <h5>#FreeBala</h5>
                             <p class="font-weight-light mb-0">Dolor lorem ipsum sit amet adpesising</p>
                         </div>
                     </div>
