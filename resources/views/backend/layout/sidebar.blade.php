@@ -45,7 +45,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="{{ url('blog') }}" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Blog</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Events</p>
                 </a>
@@ -56,9 +62,7 @@
                   <p>Announcements</p>
                 </a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-item">
+              <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>
@@ -66,6 +70,9 @@
               </p>
             </a>
           </li>
+            </ul>
+          </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

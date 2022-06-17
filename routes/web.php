@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('auth', function ()
-{
-    return view('backend.layout.main');
-});
+Route::resource('blog', BlogController::class);
