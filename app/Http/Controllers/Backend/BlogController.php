@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class BlogController extends Controller
@@ -23,7 +24,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('backend/blog/index');
+        $data['posts'] = Blog::all();
+        //dd($data['posts']);
+
+        return view('backend/blog/index', $data);
     }
 
     /**
@@ -69,9 +73,12 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show(int $id)
     {
-        //
+        $data['post'] = Blog::find($id);
+        //dd($data);
+
+        return view('backend/blog/show', $data);
     }
 
     /**
@@ -80,9 +87,13 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit(int $id)
     {
-        //
+        dd('here');
+        $data['post'] = Blog::find($id);
+        //dd($data);
+
+        return view('backend/blog/edit', $data);
     }
 
     /**
